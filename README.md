@@ -1,6 +1,4 @@
-# **FizzBuzz 測試練習 :)**
-
----
+# **單元測試(Unit test)練習：FizzBuzz**
 
 ## 說明
 
@@ -11,32 +9,35 @@ FizzBuzz 程式是經典的面試考題之一。我們會將一個大於 0 的�
 若該整數能被 3 和 5 同時整除，回傳 FizzBuzz；
 若都不能整除，回傳該整數。
 
----
-
 ## 目的
 
-**熟練軟體測試之〈單元測試〉**
+**熟練軟體測試之〈單元測試 Unit test〉**
 
 單元測試（Unit Test）：針對個別的類別和方法，測試執行結果符合預期。通常會由撰寫功能的人自行撰寫單元測試，因為開發者最清楚程式碼的內部結構。
 
----
+軟體測試除〈單元測試〉外，還有：
+
+- 整合測試（Integration Test）：在各個功能整合之後，就整個系統，測試元件之間的互動正確。
+- 驗收測試（Acceptance Test）：從使用者的觀點測試整個軟體是否符合使用者的需求，而不管程式碼內部的運作，通常由專門的軟體品質測試工程師（QA 工程師）來負責。
 
 ## 工具及參考
 
-**測試工具：Mocha(js 的框架) 和 Chai(一種斷言庫)**
-[Mocha](https://mochajs.org/)
-[單元測試：Mocha、Chai 和 Sinon](https://cythilya.github.io/2017/09/17/unit-test-with-mocha-chai-and-sinon/)
+- **測試工具：Mocha(js 的框架) 和 Chai(一種斷言庫)**
 
----
+- [Mocha](https://mochajs.org/)
+
+- [單元測試：Mocha、Chai 和 Sinon](https://cythilya.github.io/2017/09/17/unit-test-with-mocha-chai-and-sinon/)
+
+- [一次搞懂單元測試、整合測試、端對端測試之間的差異](https://blog.miniasp.com/post/2019/02/18/Unit-testing-Integration-testing-e2e-testing)
 
 ## 構思
+
+設計四個測試案例：
 
 - [case 1] input: 9, expect output : Fizz
 - [case 2] input: 10, expect output : Buzz
 - [case 3] input: 15, expect output : FizzBuzz
 - [case 4] input: 8, expect output : 8
-
----
 
 ## 實作
 
