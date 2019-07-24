@@ -26,9 +26,11 @@ FizzBuzz 程式是經典的面試考題之一。我們會將一個大於 0 的�
 
 - [Mocha](https://mochajs.org/)
 
+- [Chai](https://www.chaijs.com/api/)
+
 - [單元測試：Mocha、Chai 和 Sinon](https://cythilya.github.io/2017/09/17/unit-test-with-mocha-chai-and-sinon/)
 
-- [一次搞懂單元測試、整合測試、端對端測試之間的差異](https://blog.miniasp.com/post/2019/02/18/Unit-testing-Integration-testing-e2e-testing)
+- [軟體測試的四個階段，單元測試、整合測試、系統測試、驗收測試](https://www.itread01.com/content/1547157994.html)
 
 ## 構思
 
@@ -69,22 +71,22 @@ function fizzBuzz(num) {
 // [case 4]input: 8, expect output: 8
 var should = chai.should();
 describe("function fizzbuzz", function() {
-  it("[case 1] input: 9, expect output: Fizz", function() {
+  it("it should return 'Fizz' when number can be divide by 3", function() {
     let num = 9;
     let result = fizzBuzz(num);
     result.should.be.equal("Fizz");
   });
-  it("[case 2]input: 10, expect output: Buzz", function() {
+  it("it should return 'Bizz' when number can be divide by 5", function() {
     let num = 10;
     let result = fizzBuzz(num);
     result.should.be.equal("Buzz");
   });
-  it("[case 3] input: 15, expect output: Fizz", function() {
+  it("it should return 'FizzBuzz' when number can be divide by 3 and divide by 5", function() {
     let num = 15;
     let result = fizzBuzz(num);
     result.should.be.equal("FizzBuzz");
   });
-  it("[case 4] input: 8, expect output: 8", function() {
+  it("it should return number equal to input when number can not be divide by 3 or divide by 5", function() {
     let num = 8;
     let result = fizzBuzz(num);
     result.should.be.equal(num);
