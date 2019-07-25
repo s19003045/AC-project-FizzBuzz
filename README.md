@@ -93,3 +93,6 @@ describe("function fizzbuzz", function() {
   });
 });
 ```
+
+output：
+![unit-test:FizzBuzz](image/fizzBuzz functoin unit-test.png)
