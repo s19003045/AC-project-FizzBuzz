@@ -95,4 +95,4 @@ describe("function fizzbuzz", function() {
 ```
 
 output：
-![unit-test:FizzBuzz](image/fizzBuzz functoin unit-test.png)
+![unit-test:FizzBuzz](https://github.com/s19003045/AC-project-FizzBuzz/blob/master/image/fizzBuzz%20functoin%20unit-test.png)
